@@ -304,6 +304,10 @@
 		<category name="CAT_SOUND" colour="#2a93e8">
 				<block type="Sound_status_sensor2"><field name="PIN_SOUND">A6</field></block>	
 				<block type="Sound_sensor2"><field name="PIN_SOUND">A6</field></block>	
+				<block type="SoundAmp_sensor2">
+					<field name="PIN_SOUND">A6</field>
+					<value name="SAMPLE_WINDOW"><shadow type="math_number"><field name="NUM">50</field></shadow></value>
+				</block>	
 		</category>
 		<category name="CAT_TEMP" colour="#2a93e8">
 				<block type="dht_sensor2"></block>	
@@ -339,7 +343,7 @@
 			<block type="APDS9960_readgesture"></block>
 			<block type="APDS9960_gesture"></block>
 			<block type="APDS9960_color_init"></block>
-			<block type="APDS9960_color_gain"></block>
+			<block type="APDS9960_color_detected"></block>
 			<block type="APDS9960_read_colors"></block>
 			<block type="APDS9960_color"></block>
 		</category>
@@ -377,6 +381,8 @@
 			<block type="CCS811_available"></block>
 			<block type="CCS811_readed"></block>
 			<block type="CCS811_values"></block>
+			<block type="Air_sensor2"></block>	
+			<block type="Air_status_sensor2"></block>
 		</category>		
 		
 		<category name="CAT_GYRO" colour="#2a93e8">

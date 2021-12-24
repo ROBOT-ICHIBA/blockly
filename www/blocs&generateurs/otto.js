@@ -120,8 +120,8 @@ Blockly.Arduino['otto_arms_init'] = function(block) {
     Blockly.Arduino.definitions_['otto_arms'] = '#define PIN_AL '+ PIN_AL +' // left arm\n'
     +'#define PIN_AR '+ PIN_AR +' // right arm \n'
     +'void move_servo(){ AL.write(pos[1]+adj[1]); AR.write(pos[2]+adj[2]);}';
-    Blockly.Arduino.setups_['otto_arms']='AL.attach(PIN_AR);\n'
-    +'AR.attach(PIN_AL);\n'
+    Blockly.Arduino.setups_['otto_arms']='AL.attach(PIN_AL);\n'
+    +'AR.attach(PIN_AR);\n'
     +'move_servo();\n'
     +'delay(100);';
   var code = '';
